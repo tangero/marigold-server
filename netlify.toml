@@ -2,7 +2,6 @@
   command = """
     pip install -r requirements.txt && \
     python process_thumbnails.py && \
-    gem update --system && \
     gem install bundler -v 2.4.22 && \
     bundle _2.4.22_ install && \
     bundle exec jekyll build
