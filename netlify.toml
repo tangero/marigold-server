@@ -1,3 +1,10 @@
-[build]
-  command = "python process_thumbnails.py && jekyll build"
+[
+build
+]
+  command = "pip install -r requirements.txt && python process_thumbnails.py && jekyll build"
   publish = "_site"
+
+[
+build.environment
+]
+  PYTHON_VERSION = "3.8"
