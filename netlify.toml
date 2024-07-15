@@ -1,0 +1,3 @@
+[build]
+  command = "python process_thumbnails.py && jekyll build"
+  publish = "_site"
