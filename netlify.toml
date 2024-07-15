@@ -1,3 +1,9 @@
 [build]
-  command = "pip install -r requirements.txt && python process_thumbnails.py && gem install jekyll bundler && bundle install && bundle exec jekyll build"
+  command = """
+    pip install -r requirements.txt && \
+    python process_thumbnails.py && \
+    gem update --system && \
+    bundle install && \
+    bundle exec jekyll build
+  """
   publish = "_site"
