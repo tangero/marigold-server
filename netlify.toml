@@ -3,7 +3,7 @@
     pip install -r requirements.txt && \
     python process_thumbnails.py && \
     gem install bundler -v 2.4.22 && \
-    bundle _2.4.22_ install && \
+    bundle install && \
     bundle exec jekyll build
   """
   publish = "_site"
